@@ -16,7 +16,7 @@ export default function HomePage() {
           Discover your perfect spot at any event – concerts, movies, games, and more. Great Seat helps you choose the best place to sit, every time.
         </p>
         <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full hover:bg-indigo-700 transition">
-          Find My Seat
+          Find Seat in Karaikudi
         </button>
       </div>
     </main>
