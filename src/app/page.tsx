@@ -1,6 +1,15 @@
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-100 to-indigo-200 flex flex-col items-center justify-center p-6">
+    <main className="min-h-screen bg-gradient-to-br from-green-100 to-emerald-200 flex flex-col items-center justify-center p-6 relative overflow-hidden">
+      {/* Pink Bubbles Background */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <span
+            key={i}
+            className={`bubble bubble-${i}`}
+          />
+        ))}
+      </div>
       <div className="max-w-2xl bg-white shadow-2xl rounded-2xl p-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-indigo-700 mb-4">Great Seat</h1>
         <p className="text-lg text-gray-700 mb-6">
